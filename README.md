@@ -4,4 +4,4 @@ Instead of only having a resume, I figured it would be a good idea to have a per
 
 ## TODO
 
-1. Create CI/CD pipeline to make deploying chanegs much easier
+1. Create CI/CD pipeline to make deploying changes much easier
