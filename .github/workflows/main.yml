@@ -3,9 +3,12 @@
 name: CI
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches-ignore: [ master ]
 
 jobs:
+  deploy:
+    name: Build and deploy
+    steps:
+      - name: Echo command
+      - run: echo "hello"
