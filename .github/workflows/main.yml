@@ -2,6 +2,7 @@ name: CI
 
 on:
   pull_request:
+    type: [ open ]
     branches-ignore: [ master ]
 
 jobs:
@@ -12,5 +13,5 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v1
 
-      - name: Echo command
+      - name: Echo Command
         run: echo "hello"
