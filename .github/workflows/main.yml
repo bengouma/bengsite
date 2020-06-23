@@ -1,11 +1,14 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
+    type: [ open ]
     branches: [ master ]
 
 jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Echo Command
+        run: echo "hello"
