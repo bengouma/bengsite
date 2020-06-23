@@ -10,8 +10,5 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v1
-
       - name: Echo Command
         run: echo "hello"
