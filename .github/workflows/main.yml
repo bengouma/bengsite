@@ -10,5 +10,5 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-20.04
     steps:
-      - name: Echo Command
-        run: echo "hello"
+      - uses: FranzDiebold/github-env-vars-action@v1.0.0
+      - uses: actions/checkout@v1
