@@ -10,7 +10,3 @@ const server = app.listen(8080, () => {
 app.get('/', (req,res) => {
   res.render('main');
 });
-
-// comment for test 
-// comment # 2
-//comment # 3
