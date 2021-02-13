@@ -5,7 +5,7 @@ on:
     branches:
       - master
 
-job:
+jobs:
   gcloud:
     name: Get gcloud info
     uses: google-github-actions/setup-gcloud@master
