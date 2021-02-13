@@ -5,7 +5,7 @@
     service_account_key: ${{ secrets.GCP_SA_KEY }}
     export_default_credentials: true
 
-on:
+- on:
   push:
     branches:
       - master
