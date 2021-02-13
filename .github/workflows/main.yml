@@ -1,14 +1,14 @@
-name: CI
+- name: Use gcloud SDK
+  uses: google-github-actions/setup-gcloud@master
+  with:
+    project_id: ${{ secrets.GCP_PROJECT_ID }}
+    service_account_key: ${{ secrets.GCP_SA_KEY }}
+    export_default_credentials: true
 
 on:
-  pull_request:
-    type: [ open ]
-    branches: [ master ]
+  push:
+    branches:
+      - master
 
-jobs:
-  deploy:
-    name: Build and deploy
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: FranzDiebold/github-env-vars-action@v1.0.0
-      - uses: actions/checkout@v1
+- name: Deploy Project
+  run: gcloud info
