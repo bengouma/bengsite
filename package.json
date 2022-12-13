@@ -4,7 +4,7 @@
   "description": "Site for Ben G",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pug": "^3.0.0",
     "raspify": "^1.0.1"
   },
